@@ -1,0 +1,79 @@
+a
+select startYear, (endYear - startYear) as age, count(*) as number_of_tvseries
+from title_basics 
+group by startYear, endYear 
+order by startYear asc;
+
+b
+select b.startYear, count(*) as number_of_movies
+from title_akas a join title_basics b on a.titleId = b.tconst
+where a.isOriginalTitle = 0 and b.startYear >= 1960 and b.startYear <= 2019 and b.titleType = 'movie' 
+group by b.startYear
+order by b.startYear;
+
+c
+select b.startYear, count(*)
+from title_akas a join title_basics b on a.titleId = b.tconst
+where a.title is not null and a.isOriginalTitle = 0 and b.startYear >= 1960 and b.endYear <= 2019 and b.titleType = 'movie'
+group by b.startYear
+order by b.startYear;
+
+d
+select startYear, count(*)
+from title_basics
+where titleType = 'movie' and startYear >= 1960 and startyear <= 2019 and endYear is not null
+group by startYear
+order by startYear;
+
+e
+select startYear, genre, min(runtimeMinutes) as min_runtime, max(runtimeMinutes) as max_runtime from title_basics
+cross join unnest(genres) as t(genre) 
+where startYear >= 1960 and titleType = 'movie' 
+group by startYear, genre 
+order by startYear asc;
+
+f
+select b.averageRating, cast(count(*) as double)/(select count(*)
+from title_basics a join title_ratings b on a.tconst = b.tconst
+where a.titleType = 'movie' and a.startYear >= 2015 and a.startYear <= 2019 and b.averageRating is not null)
+from title_basics a join title_ratings b on a.tconst = b.tconst
+where a.titleType = 'movie' and a.startYear >= 2015 and a.startYear <= 2019 and b.averageRating is not null
+group by b.averageRating
+order by b.averageRating;
+
+g
+select
+     cast(count(CASE WHEN numVotes BETWEEN 0 AND 10000 THEN 1 END) as double) / (select count(*) from title_ratings where numVotes is not null) as count0_10000,
+     cast(count(CASE WHEN numVotes BETWEEN 10001 AND 20000 THEN 1 END) as double) / (select count(*) from title_ratings where numVotes is not null) as count10001_20000,
+     cast(count(CASE WHEN numVotes BETWEEN 20001 AND 30000 THEN 1 END) as double) / (select count(*) from title_ratings where numVotes is not null) as count20001_30000,
+     cast(count(CASE WHEN numVotes BETWEEN 30001 AND 40000 THEN 1 END) as double) / (select count(*) from title_ratings where numVotes is not null) as count30001_40000     
+from title_ratings
+where numVotes is not null;
+
+h
+select runtimeMinutes, cast(count(*) as double)/(select count(*) from title_basics where titleType = 'movie' and startYear between 2015 and 2019)
+from title_basics
+where titleType = 'movie' and startYear between 2015 and 2019 and runtimeMinutes is not null
+group by runtimeMinutes
+order by runtimeMinutes;
+
+i
+select startYear, round(cast(count(*) as double)) / (select cast(count(*) as double) from title_basics where startYear >= 2000 and startYear <= 2019 and titleType = 'movie' and startYear >= 2000 and startYear <= 2019) 
+from title_basics
+where titleType = 'movie' and startYear >= 2000 AND startYear <= 2019
+group by startYear
+order by startYear asc;
+
+j
+The highest cardinality of genres array is 3 only. 
+
+k
+select rank() over (order by cardinality(Directors) desc) Rank, Movie_title_id, Movie_title, Directors, cardinality(Directors)
+from
+(select a.tconst as Movie_title_id, a.primaryTitle as Movie_title, b.directors as Directors from title_basics a join title_crew b on a.tconst = b.tconst join title_ratings c on b.tconst = c.tconst where a.titleType = 'movie' and c.averageRating > 5) 
+limit 10;
+
+
+
+
+

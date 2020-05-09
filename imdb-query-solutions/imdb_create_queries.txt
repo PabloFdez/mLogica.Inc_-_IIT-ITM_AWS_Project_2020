@@ -1,0 +1,41 @@
+CREATE EXTERNAL TABLE title_akas (
+titleId string, ordering smallint, title string, region string, language string, types array<string>, attributes array<string>, isOriginalTitle tinyint
+)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY '	' COLLECTION ITEMS TERMINATED BY ','
+LOCATION 's3://title-akas-tsv/'
+
+CREATE EXTERNAL TABLE title_basics (
+tconst string, titleType string, primaryTitle string, originalTitle string, isAdult boolean, startYear smallint, endYear smallint, runtimeMinutes smallint, genres array<string>
+)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY '	' COLLECTION ITEMS TERMINATED BY ','
+LOCATION 's3://title-basics-tsv/'
+
+CREATE EXTERNAL TABLE title_crew (
+tconst string, directors array<string>, writers array<string>
+)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY '	' COLLECTION ITEMS TERMINATED BY ','
+LOCATION 's3://title-crew-tsv/'
+
+CREATE EXTERNAL TABLE title_episode (
+tconst string, parentTconst string, seasonNumber smallint, episodeNumber smallint
+)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY '	'
+LOCATION 's3://title-episode-tsv/'
+
+CREATE EXTERNAL TABLE title_principals (
+tconst string, ordering smallint, nconst string, category string, job string, characters string 
+)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY '	'
+LOCATION 's3://title-principals-tsv/'
+
+CREATE EXTERNAL TABLE title_ratings (
+tconst string, averageRating smallint, numVotes smallint 
+)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY '	'
+LOCATION 's3://title-ratings-tsv/'
+
+CREATE EXTERNAL TABLE name_basics (
+nconst string, primaryName string, birthYear smallint, deathYear smallint, primaryProfession array<string>, knownForTitles array<string> 
+)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY '	' COLLECTION ITEMS TERMINATED BY ','
+LOCATION 's3://name-basics-tsv/'
