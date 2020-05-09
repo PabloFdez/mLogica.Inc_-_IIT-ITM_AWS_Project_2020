@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="May 8th, 2020" />
+  <title>mLogica IIT Presentation Summary</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="https://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
+  <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">mLogica IIT Presentation Summary</h1>
+  <p class="author">
+May 8th, 2020
+  </p>
+</div>
+<div id="mlogica-iit-presentation-agenda" class="title-slide slide section level1"><h1>mLogica IIT Presentation Agenda</h1></div><div id="presentation-agenda" class="slide section level2">
+<h1>Presentation Agenda</h1>
+<ul class="incremental">
+<li>Introduction of team members and guests</li>
+<li>Outline of original project and tasks</li>
+<li>Explanation and detail of tasks accomplished</li>
+<li>Summary and future work</li>
+</ul>
+</div><div id="team" class="slide section level2">
+<h1>Team</h1>
+<ul class="incremental">
+<li><a href="https://www.mlogica.com/" title="mLogica Web site">mLogica</a>
+<ul class="incremental">
+<li>Neil Okhandiar - System Architect</li>
+<li>Apurba Saha - DBA &amp; Developer</li>
+</ul></li>
+<li>IIT/Information Technology and Management - Graduate Students
+<ul class="incremental">
+<li><a href="https://www.linkedin.com/in/balaji-jagannathan/" title="Balaji Jagannathan Linkedin profile">Balaji Jagannathan</a></li>
+<li><a href="https://www.linkedin.com/in/pablo-fernandez-diaz/" title="Pablo Fernandez Diaz Linkedin Profile">Pablo Fernandez Diaz</a></li>
+<li><a href="https://www.linkedin.com/in/rutvik-bhamwari/" title="Rutvik Bhamwari Linkedin profile">Rutvik Bhamwari</a></li>
+<li><a href="https://www.linkedin.com/in/somendrac90/" title="Somendra Chaudhary Linkedin profile">Somendra Chaudhary</a></li>
+<li><a href="https://www.linkedin.com/in/mridul-khullar/" title="Mridul Khullar Linkedin profile">Mridul Khullar</a></li>
+<li><a href="https://www.linkedin.com/in/aniruddhp/" title="Aniruddh Purohit Linked profile">Aniruddh Purohit</a></li>
+<li><a href="https://www.iit.edu/directory/people/jeremy-hajek" title="IIT Profile Jeremy Hajek">Professor Jeremy Hajek</a></li>
+</ul></li>
+</ul>
+</div><div id="outline-of-project" class="slide section level2">
+<h1>Outline of Project</h1>
+<ul class="incremental">
+<li>Outline from mLogica of the background the initial contact in November of 2019
+<ul class="incremental">
+<li>This is purely multi-phase evolutionary Data Analytics project for IIT offered from mLogica Inc.</li>
+</ul></li>
+<li>Both of the CEO and System Architect Neil Okhandiar, along with other upper management of the company, took great interest in this joint project
+<ul class="incremental">
+<li>Giving Apurba a roadmap of what to accomplish with IIT</li>
+<li>Apurba specified the guidelines and documented the work in each phase to be completed for the students</li>
+<li>Each student carried out all the work individually in each phase</li>
+<li>Apurba attended weekly, nearly daily short meetings to check progress, comment on work, and make adjustments to results</li>
+</ul></li>
+</ul>
+</div><div id="phases-of-the-project" class="slide section level2">
+<h1>Phases of the Project</h1>
+<ul class="incremental">
+<li>We worked in three phases:
+<ul class="incremental">
+<li>Learned how to build queries joining many relations and trying to achieve high granularity of knowledge while working in a simple domain, using AWS S3 and Athena.</li>
+<li>Building queries over classifications, statistical mean, RMS, co-relations between data &amp; answer some knowledge based questions for senior management, using AWS S3 and QuickSight.</li>
+<li>Involved various aspects of data analytics like aggregates, text processing, multi-variate running totals (like pivot tables) and also visual presentations, machine learning algorithms, and the IT infrastructure needed to deploy this technology, using AWS S3 and SageMaker</li>
+</ul></li>
+<li>AWS credentials &amp; accesses for this project were provided by mLogica</li>
+</ul>
+</div><div id="march-2006---rutvik" class="slide section level2">
+<h1>March 2006 - Rutvik</h1>
+<ul class="incremental">
+<li>What happened on March 14th, 2006?
+<ul class="incremental">
+<li>Microsoft – Just released Windows Vista</li>
+<li>iPhone didn’t exist</li>
+<li>Android didn’t exist</li>
+</ul></li>
+<li>March 14th, 2006 - AWS S3 (Simple Storage Service)</li>
+</ul>
+</div><div id="simple-storage-service" class="slide section level2">
+<h1>Simple Storage Service</h1>
+<ul class="incremental">
+<li>Object storage over HTTP
+<ul class="incremental">
+<li>Cost for storage dropped</li>
+<li>Immutable object storage</li>
+<li>Highly available</li>
+<li>Data accessible via HTTP (can be used through any platform/OS)</li>
+<li>Decoupled storage and compute</li>
+</ul></li>
+</ul>
+</div><div id="section" class="slide section level2">
+<h1></h1>
+<div class="figure">
+<img src="images/differentclouds.png" title="Cloud Timeline" alt="Cloud Timeline" />
+<p class="caption"><em>Cloud Timeline</em></p>
+</div>
+</div><div id="when-s3-grew-up" class="slide section level2">
+<h1>When S3 grew up</h1>
+<ul class="incremental">
+<li>2006 - December 2016</li>
+<li>Increasing data creates latency issues</li>
+<li>More time in transfer than doing analyses on that data</li>
+</ul>
+</div><div id="solution-to-the-problem" class="slide section level2">
+<h1>Solution to the problem</h1>
+<ul class="incremental">
+<li>December 2016
+<ul class="incremental">
+<li>AWS Athena was born</li>
+<li>Untraditional way</li>
+<li>Service that works directly on the data where it sits (in S3)</li>
+</ul></li>
+</ul>
+</div><div id="introduction-to-athena---rutvik" class="slide section level2">
+<h1>Introduction to Athena - Rutvik</h1>
+<ul class="incremental">
+<li>Serverless</li>
+<li>Interactive query platform</li>
+<li>Uses standard SQL for querying data</li>
+<li>Uses Presto (a distributed SQL query engine for Big Data)
+<ul class="incremental">
+<li>AWS Console</li>
+<li>Athena API</li>
+<li>Athena CLI</li>
+<li>JDBC connection</li>
+</ul></li>
+</ul>
+</div><div id="continuation" class="slide section level2">
+<h1>Continuation</h1>
+<ul class="incremental">
+<li>Only pay for querying for data</li>
+<li>Integrates with ETL tools and AWS QuickSight for data visualization</li>
+</ul>
+</div><div id="images-from-athena---rutvik" class="slide section level2">
+<h1>Images from Athena - Rutvik</h1>
+<div class="figure">
+<img src="images/athena1.png" title="AWS Athena dashboard" alt="AWS Athena dashboard" />
+<p class="caption"><em>AWS Athena dashboard</em></p>
+</div>
+</div><div id="section-1" class="slide section level2">
+<h1></h1>
+<div class="figure">
+<img src="images/Athena2.png" title="S3 Bucket" alt="S3 Bucket" />
+<p class="caption"><em>S3 Bucket</em></p>
+</div>
+</div><div id="section-2" class="slide section level2">
+<h1></h1>
+<div class="figure">
+<img src="images/Athena3.png" title="Create Table" alt="Create Table" />
+<p class="caption"><em>Create Table</em></p>
+</div>
+</div><div id="section-3" class="slide section level2">
+<h1></h1>
+<div class="figure">
+<img src="images/Athena4.png" title="Create Table2" alt="Create Table2" />
+<p class="caption"><em>Create Table2</em></p>
+</div>
+</div><div id="section-4" class="slide section level2">
+<h1></h1>
+<div class="figure">
+<img src="images/Athena5.png" title="Create Table3" alt="Create Table3" />
+<p class="caption"><em>Create Table3</em></p>
+</div>
+</div><div id="section-5" class="slide section level2">
+<h1></h1>
+<div class="figure">
+<img src="images/Athena6.png" title="Create Table4" alt="Create Table4" />
+<p class="caption"><em>Create Table4</em></p>
+</div>
+</div><div id="section-6" class="slide section level2">
+<h1></h1>
+<div class="figure">
+<img src="images/Athena7.png" title="Create Table5" alt="Create Table5" />
+<p class="caption"><em>Create Table5</em></p>
+</div>
+</div><div id="section-7" class="slide section level2">
+<h1></h1>
+<div class="figure">
+<img src="images/Athena8.png" title="Create Table6" alt="Create Table6" />
+<p class="caption"><em>Create Table6</em></p>
+</div>
+</div><div id="section-8" class="slide section level2">
+<h1></h1>
+<div class="figure">
+<img src="images/Athena9.png" title="Create Table7" alt="Create Table7" />
+<p class="caption"><em>Create Table7</em></p>
+</div>
+</div><div id="internet-movie-database-imdb-data-insights" class="slide section level2">
+<h1>Internet Movie Database (IMDb) – Data Insights</h1>
+<ul class="incremental">
+<li><a href="https://datasets.imdbws.com/" title="IMDB dataset URL">IMDB Dataset</a></li>
+<li>7 datasets contained in a gzipped, tab-separated-values (TSV) formatted file</li>
+<li>Size of the datasets: 500 MB to 1 GB</li>
+<li>Contains information on movie titles, movie attributes, cast and crew associated with movies, tv episodes, ratings and votes information, actor names and details</li>
+<li>Loading the IMDB datasets:
+<ul class="incremental">
+<li>Uploaded the datasets in S3 buckets</li>
+<li>In Athena, created database and tables, defined the columns, pointed to the files in S3 bucket</li>
+<li>Defined a Query result location in S3</li>
+</ul></li>
+</ul>
+</div><div id="imdb-dataset-description" class="slide section level2">
+<h1>IMDB Dataset Description</h1>
+<ul class="incremental">
+<li>Most of the column datatypes are string, integer or float, few of them are arrays</li>
+<li>Important features of dataset:
+<ul class="incremental">
+<li>genres: includes up to three genres associated with the title</li>
+<li>directors: director(s) of the given title</li>
+<li>startyear, endyear: used to calculate age of movies, TV Series, etc.</li>
+<li>runtime minutes: used to calculate min, max runtimes of movies, TV Series, etc.</li>
+<li>density of movies with respect to average rating and number of votes</li>
+</ul></li>
+</ul>
+</div><div id="issue-faced" class="slide section level2">
+<h1>Issue Faced</h1>
+<ul class="incremental">
+<li>Problem while defining datatype for multi-valued columns:
+<ul class="incremental">
+<li>Defined array datatype for multi-valued columns like genres and directors</li>
+<li>Athena was unable to treat the values as different elements of array</li>
+<li>Treating all the values as one single element of array</li>
+</ul></li>
+</ul>
+</div><div id="solution-provided" class="slide section level2">
+<h1>Solution Provided</h1>
+<ul class="incremental">
+<li>To deal with that, we used <code>split()</code> function to convert them into arrays, so the values can be read as different elements:</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sql"><code class="sourceCode sql"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">CREATE</span> <span class="kw">TABLE</span> <span class="cf">IF</span> <span class="kw">NOT</span> <span class="kw">EXISTS</span> title_basics_new <span class="kw">AS</span> \</a>
+<a class="sourceLine" id="cb1-2" title="2">(<span class="kw">SELECT</span> tconst, titletype, primarytitle, \</a>
+<a class="sourceLine" id="cb1-3" title="3">originaltitle, isadult, startyear, endyear, \</a>
+<a class="sourceLine" id="cb1-4" title="4">runtimeminutes, <span class="kw">split</span>(element_at(genres,<span class="dv">1</span>),<span class="st">&#39;,&#39;</span>) \</a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="kw">AS</span> genre <span class="kw">FROM</span> title_basics)</a></code></pre></div>
+<ul class="incremental">
+<li>Values are now read as different elements of array</li>
+</ul>
+</div><div id="imdb-queries-implementation" class="slide section level2">
+<h1>IMDB Queries Implementation</h1>
+<ul class="incremental">
+<li>Implemented 11 interactive queries in Athena to understand:
+<ul class="incremental">
+<li>Athena’s ability to handle complex requests</li>
+<li>Time taken to perform different analysis</li>
+</ul></li>
+<li>Used inner joins, cross joins, case statements, nested queries, common table expressions, window functions, arrays</li>
+<li>Documentation on running SQL queries using Athena:
+<ul class="incremental">
+<li><a href="https://docs.aws.amazon.com/athena/latest/ug/querying-athena-tables.html" title="Athena User Guide">Athena User Guide</a></li>
+</ul></li>
+</ul>
+</div><div id="imdb-queries-with-some-results---query-1" class="slide section level2">
+<h1>IMDB Queries With Some Results - Query 1</h1>
+<ul class="incremental">
+<li>Density of movies within last 5 years against number of votes
+<ul class="incremental">
+<li><img src="images/Q1athena-new1.PNG" title="fig:q1" alt="q1" /></li>
+</ul></li>
+</ul>
+</div><div id="imdb-queries-with-some-results---query-2" class="slide section level2">
+<h1>IMDB Queries With Some Results - Query 2</h1>
+<ul class="incremental">
+<li>A report of minimum &amp; maximum runtime for different types of movies such as ‘Documentary’, ‘Short’, ‘Animation’
+<ul class="incremental">
+<li><img src="images/Q2athena-new1.PNG" title="fig:q2" alt="q2" /></li>
+</ul></li>
+</ul>
+</div><div id="imdb-queries-with-some-results---query-3" class="slide section level2">
+<h1>IMDB Queries With Some Results - Query 3</h1>
+<ul class="incremental">
+<li>Movies with 10 largest sets of co-directors starting from the top largest and going down by size of co-director array, with average rating above 5
+<ul class="incremental">
+<li><img src="images/Q3athena-new1.PNG" title="fig:q3" alt="q3" /></li>
+</ul></li>
+</ul>
+</div><div id="quicksight---somendra-and-pablo" class="slide section level2">
+<h1>QuickSight - Somendra and Pablo</h1>
+<ul class="incremental">
+<li>Introduction to Data Visualization</li>
+</ul>
+<div class="figure">
+<img src="images/introCharts.png" title="introCharts" alt="introCharts" />
+<p class="caption"><em>introCharts</em></p>
+</div>
+</div><div id="data-visualization-platforms---pablo" class="slide section level2">
+<h1>Data Visualization Platforms - Pablo</h1>
+<ul class="incremental">
+<li>New technological advances are used by Data Visualization Platfroms</li>
+</ul>
+<div class="figure">
+<img src="images/logos.png" title="logos" alt="logos" />
+<p class="caption"><em>logos</em></p>
+</div>
+</div><div id="the-importance-of-data-visualization-based-on-quicksight" class="slide section level2">
+<h1>The Importance of Data Visualization based on QuickSight</h1>
+<ul class="incremental">
+<li>Easy interactive Dashboards and Reports</li>
+<li>Not a graph picture, data still accessible</li>
+</ul>
+<div class="figure">
+<img src="images/exampleQS.png" title="example" alt="example" />
+<p class="caption"><em>example</em></p>
+</div>
+</div><div id="main-features-of-aws-quicksight-competitors---pablo" class="slide section level2">
+<h1>Main Features of AWS QuickSight &amp; Competitors - Pablo</h1>
+<ul class="incremental">
+<li>Main features:
+<ul class="incremental">
+<li>Cloud-based Platform</li>
+<li>Pay-Per-Use Model</li>
+<li>Creates Visualizations / Performs Analysis / Gets Business Insights</li>
+<li>The AWS Business Intelligence and Analysis tool</li>
+</ul></li>
+<li>AWS QuickSight vs Tableau vs Power BI
+<ul class="incremental">
+<li>Three very powerful BI and Analysis tools</li>
+<li>Some main differences:
+<ul class="incremental">
+<li>Pricing model</li>
+<li>Learning Curve</li>
+<li>Data Sources and Compatibility</li>
+</ul></li>
+</ul></li>
+</ul>
+</div><div id="data-sources-quicksight-compatibility---pablo" class="slide section level2">
+<h1>Data Sources QuickSight Compatibility - Pablo</h1>
+<ul class="incremental">
+<li>Easy to connect with other Services and Data Sources</li>
+<li>Data Sources supported by AWS QuickSight:</li>
+</ul>
+<div class="figure">
+<img src="images/diag1.jpg" title="SPICE_flow" alt="SPICE_flow" />
+<p class="caption"><em>SPICE_flow</em></p>
+</div>
+</div><div id="aws-quicksight-spice---pablo" class="slide section level2">
+<h1>AWS QuickSight SPICE - Pablo</h1>
+<ul class="incremental">
+<li>SPICE (Super-fast, Parallel, In-memory, Calculation, Engine)</li>
+<li>Performance improve
+<ul class="incremental">
+<li>In-memory Processing</li>
+<li>Not using Direct Query to the Database</li>
+</ul></li>
+</ul>
+</div><div id="us-accidents-dataset" class="slide section level2">
+<h1>US Accidents dataset</h1>
+<ul class="incremental">
+<li>Downloaded from <a href="https://www.kaggle.com/" title="Kaggle">Kaggle</a>.</li>
+<li>US Accidents (3.0 million records) <a href="https://www.kaggle.com/" title="dataset">dataset</a>.</li>
+<li>Complex + big dataset</li>
+<li>Fields of interest:
+<ul class="incremental">
+<li>Level of severity: 1 (least severe) to 4 (most severe).</li>
+<li>Start time + End time.</li>
+<li>Distance (in mi): The length of the road extent affected by the accident.</li>
+<li>Description: Natural language description of the accident.</li>
+<li>State.</li>
+<li>Zipcode.</li>
+<li>Weather condition.</li>
+<li>Natural and infrastructure parameters.</li>
+</ul></li>
+</ul>
+</div><div id="some-interesting-problems" class="slide section level2">
+<h1>Some interesting problems</h1>
+<ul class="incremental">
+<li>Number of accidents in each state for different levels of severity.</li>
+<li>Number of accidents by time range.</li>
+<li>Percentage of level of severity for accidents in good versus bad weather conditions.</li>
+<li>Number of accidents by month year and various parameter range for different levels of severity in good versus bad weather conditions.</li>
+<li>Precious words in description column.</li>
+<li>Average precipitation for 5 select states over time.</li>
+</ul>
+<p><em>Interesting Tools to query data from Athena into SPICE</em></p>
+<ul class="incremental">
+<li>Aggregate <a href="https://prestodb.io/docs/current/functions/aggregate.html" title="functions">functions</a>, Window <a href="https://prestodb.io/docs/current/functions/window.html" title="functions">functions</a>, Regexp <a href="https://prestodb.io/docs/current/functions/regexp.html" title="functions">functions</a>.</li>
+<li>Hierarchical and recursive queries.</li>
+</ul>
+<p><strong>Let’s see some visuals created using QuickSight</strong></p>
+</div><div id="no.-of-accidents-by-severity-for-different-states" class="slide section level2">
+<h1><em>No. of accidents by severity for different states</em></h1>
+<div class="figure">
+<img src="images/vis1.png" title="CA, TX and FL have the highest number and highest severity level of accidents." alt="CA, TX and FL have the highest number and highest severity level of accidents." />
+<p class="caption"><em>CA, TX and FL have the highest number and highest severity level of accidents.</em></p>
+</div>
+</div><div id="duration-of-accidents" class="slide section level2">
+<h1><em>Duration of accidents</em></h1>
+<div class="figure">
+<img src="images/vis2.png" title="Most accidents last only for a few minutes." alt="Most accidents last only for a few minutes." />
+<p class="caption"><em>Most accidents last only for a few minutes.</em></p>
+</div>
+</div><div id="effect-of-good-weather-on-of-each-severity-level-covering-all-accidents" class="slide section level2">
+<h1><em>Effect of good weather on % of each severity level covering all accidents</em></h1>
+<div class="figure">
+<img src="images/vis3.png" title="Do we see any patterns?" alt="Do we see any patterns?" />
+<p class="caption"><em>Do we see any patterns?</em></p>
+</div>
+</div><div id="effect-of-bad-weather-on-of-each-severity-level-covering-all-accidents" class="slide section level2">
+<h1><em>Effect of bad weather on % of each severity level covering all accidents</em></h1>
+<div class="figure">
+<img src="images/vis4.png" title="Weather conditions don&#39;t affect the percentage of each level of severity covering all accidents." alt="Weather conditions don’t affect the percentage of each level of severity covering all accidents." />
+<p class="caption"><em>Weather conditions don’t affect the percentage of each level of severity covering all accidents.</em></p>
+</div>
+</div><div id="combined-effect-of-good-weather-and-select-parameters-on-accidents" class="slide section level2">
+<h1><em>Combined effect of good weather and select parameters on accidents</em></h1>
+<div class="figure">
+<img src="images/vis5.png" title="Do we see any patterns?" alt="Do we see any patterns?" />
+<p class="caption"><em>Do we see any patterns?</em></p>
+</div>
+</div><div id="combined-effect-of-weather-conditions-and-select-parameters-on-accidents" class="slide section level2">
+<h1><em>Combined effect of weather conditions and select parameters on accidents</em></h1>
+<div class="figure">
+<img src="images/vis6.png" title="Accidents are more likely to happen when the temperature is unusual for the month irrespective of weather condition." alt="Accidents are more likely to happen when the temperature is unusual for the month irrespective of weather condition." />
+<p class="caption"><em>Accidents are more likely to happen when the temperature is unusual for the month irrespective of weather condition.</em></p>
+</div>
+</div><div id="word-cloud-finding-major-theme" class="slide section level2">
+<h1><em>Word cloud: finding major theme</em></h1>
+<div class="figure">
+<img src="images/vis7.png" title="&#39;Local street&#39; seems to be a major theme for accidents." alt="‘Local street’ seems to be a major theme for accidents." />
+<p class="caption"><em>‘Local street’ seems to be a major theme for accidents.</em></p>
+</div>
+</div><div id="total-average-preciptation-in-select-states" class="slide section level2">
+<h1><em>Total average preciptation in select states</em></h1>
+<div class="figure">
+<img src="images/vis8.png" title="Precipitation seems to follow a common theme in selected 5 states." alt="Precipitation seems to follow a common theme in selected 5 states." />
+<p class="caption"><em>Precipitation seems to follow a common theme in selected 5 states.</em></p>
+</div>
+</div><div id="further-investigation" class="slide section level2">
+<h1>Further investigation:</h1>
+<ul class="incremental">
+<li>How does severity affect the duration of accident?</li>
+<li>How would the graphs of number of accidents for different weather conditions compare if duration of weather conditions was normalized?</li>
+<li>Why are unusual temperatures causing more accidents in bad weather?</li>
+</ul>
+</div><div id="aws-sagemaker-introduction---balaji" class="slide section level2">
+<h1>AWS SageMaker Introduction - Balaji</h1>
+<ul class="incremental">
+<li>Its a fully managed machine learning service.</li>
+<li>Easy to build, train and deploy models into a production-ready hosted environment.</li>
+<li>Integrated with SageMaker Studio and Jupyter notebook instance for easy access to your data sources for exploration and analysis</li>
+<li>SageMaker is flexible and provides secure and scalable environment within few clicks from SageMaker Studio.</li>
+<li>Training and hosting are billed by minutes of usage, with no minimum fees and no upfront commitments.</li>
+</ul>
+</div><div id="features-of-sagemaker---balaji" class="slide section level2">
+<h1>Features Of Sagemaker - Balaji</h1>
+<ul class="incremental">
+<li>Amazon SageMaker Studio Notebooks and Notebook Instances
+<ul class="incremental">
+<li>Can build, train, deploy, and analyze your models all in the same application.</li>
+<li>Sagemaker studio consists of File Manager, Terminal, Git, Metrics and Graphs sections.</li>
+<li>Comes with different frameworks like Python, R, PySpark, Mxnet, TensorFlow, Pytorch, Chainer.</li>
+</ul></li>
+<li>Amazon SageMaker Autopilot
+<ul class="incremental">
+<li>It provides automatic machine learning that can quickly build classification and regression models.</li>
+<li>Users only need to provide a tabular dataset and select the target column to predict.</li>
+</ul></li>
+</ul>
+</div><div id="features-of-sagemaker-cont1--balaji" class="slide section level2">
+<h1>Features Of SageMaker Cont1- Balaji</h1>
+<ul class="incremental">
+<li>Amazon SageMaker Ground Truth
+<ul class="incremental">
+<li>Ground Truth helps you build high-quality training datasets for your machine learning models.</li>
+<li>It helps to label the dataset automatically or manually. E.g. Image, Text classification.</li>
+</ul></li>
+<li>Amazon SageMaker Debugger
+<ul class="incremental">
+<li>Enabling the inspection of all the training parameters and data throughout the training process.</li>
+<li>Use of smdebug Python library that implements the core debugging functionality.</li>
+</ul></li>
+</ul>
+</div><div id="features-of-sagemaker-cont2--balaji" class="slide section level2">
+<h1>Features Of SageMaker Cont2- Balaji</h1>
+<ul class="incremental">
+<li>Amazon SageMaker Elastic Inference
+<ul class="incremental">
+<li>Speed up the throughput and decrease the latency of getting real-time inferences from your deep learning models.</li>
+<li>It allows you to add inference acceleration to a hosted endpoint for a fraction of the cost of using a full GPU instance.</li>
+</ul></li>
+<li>Amazon SageMaker Model Monitor:
+<ul class="incremental">
+<li>Amazon SageMaker Model Monitor is a tool for the monitoring and analysis of models in production</li>
+<li>Model Monitor continuously monitors and analyzes the prediction requests. Model Monitor can store this data and use built-in statistical rules to detect common issues such as outliers in data and data drift.</li>
+</ul></li>
+</ul>
+</div><div id="architecture-of-sagemaker---balaji" class="slide section level2">
+<h1>Architecture of SageMaker - Balaji</h1>
+<ul class="incremental">
+<li>Docker Container (Elastic Container Registry): Hosting our model for training and testing purpose.</li>
+<li>Model Training: Model trained once by writing code to train.py file</li>
+<li>Deployment Hosting: Testing and Evaluating model by using predictor.py file</li>
+<li>S3 (Simple Storage Service): Storing the model artifacts and dataset.</li>
+<li>Endpoint: Interface for data input and forwarding the data to trained model.</li>
+<li>Models: Trained model attached to the endpoint.</li>
+</ul>
+</div><div id="architecture-of-sagemaker-contd---balaji" class="slide section level2">
+<h1>Architecture of SageMaker Contd - Balaji</h1>
+<p><img src="images/Sagemaker-Architecture.png" title="Sagemaker Architecture" /></p>
+</div><div id="why-machine-learning" class="slide section level2">
+<h1>Why Machine Learning</h1>
+<p><img src="images/Machine_learning.PNG" title="ML" /></p>
+</div><div id="notebook-instance---mridul" class="slide section level2">
+<h1>Notebook Instance - Mridul</h1>
+<p><img src="images/Notebook_Instance.PNG" title="Notebook" /></p>
+<ul class="incremental">
+<li>We can specify the notebook instance type for optimizing performance as desired</li>
+</ul>
+</div><div id="dataset---mridul" class="slide section level2">
+<h1>Dataset - Mridul</h1>
+<p><img src="images/DS_Original.PNG" title="Original Dataset" /></p>
+<ul class="incremental">
+<li>Dataset Source: NYSE Data set from Kaggle.</li>
+<li>7 columns. Our interest lies in predicting future stock price</li>
+<li>How we developed the predictors and response variable</li>
+</ul>
+</div><div id="developing-the-predictors" class="slide section level2">
+<h1>Developing the Predictors</h1>
+<ul class="incremental">
+<li><p>Shift Function: dataframe.shift()</p>
+<img src="images/Shift_function.PNG" title="Shift code" /></li>
+<li>X variables include: Today’s Stock price, Yesterday’s Stock Price, Day before yesterday’s Stock Price</li>
+<li><p>Y variable: 5 days down Stock price</p></li>
+</ul>
+</div><div id="final-dataset-for-machine-learning" class="slide section level2">
+<h1>Final Dataset for Machine Learning</h1>
+<p><img src="images/DF_image.PNG" title="Dataset" /></p>
+<ul class="incremental">
+<li>Feature Explanation</li>
+<li>What are we predicting</li>
+</ul>
+</div><div id="scatter-plot-for-x-variables-with-respect-to-y-variable" class="slide section level2">
+<h1>Scatter plot for X variables with respect to Y variable</h1>
+<p><img src="images/scatter_plot.PNG" title="Scatter_Plot" /></p>
+</div><div id="machine-learning-models---linear-regression" class="slide section level2">
+<h1>Machine Learning Models - Linear Regression</h1>
+<p><img src="images/model_lr.PNG" title="Linear Model" /></p>
+</div><div id="machine-learning-models---extreme-gradient-boosting-regression-xgbr" class="slide section level2">
+<h1>Machine Learning Models - Extreme Gradient Boosting Regression (XGBR)</h1>
+<p><img src="images/XGBR.PNG" title="XGBR" /></p>
+</div><div id="feature-importance-graph-with-xgbr" class="slide section level2">
+<h1>Feature Importance graph with XGBR</h1>
+<p><img src="images/model_xgbr_FI.PNG" title="Feature Importance" /></p>
+</div><div id="importance-of-using-sagemaker-for-training-model" class="slide section level2">
+<h1>Importance of using SageMaker for Training Model</h1>
+<ul class="incremental">
+<li>This was demo for training a model using Jupyter Notebook.</li>
+<li>The advantage is the Optimized performance and Deployment of model from anywhere</li>
+<li>The main advantange lies in hosting any number of models to amazon SageMaker behind endpoint</li>
+</ul>
+</div><div id="hosting-a-model-in-aws-sagemaker" class="slide section level2">
+<h1>Hosting a model in AWS SageMaker</h1>
+<p><img src="images/Deploying_model.PNG" title="deployment" /></p>
+<ul class="incremental">
+<li>Model can be trained using notebook instance and stored as a training job.</li>
+<li>This trained job/model can be imported to the container for hosting the model to SageMaker</li>
+<li>Configure the Endpoints that is mentioning instance type, no of models etc.</li>
+<li>Deploy the model behind the endpoint</li>
+<li>All the code for training jobs, hosting, endpoint creation is already present in AWS as Example</li>
+</ul>
+</div><div id="advantages" class="slide section level2">
+<h1>Advantages</h1>
+<ul class="incremental">
+<li>Less time consuming and higher performance.</li>
+<li>Very efficient for performing A/B Testing</li>
+<li>Takes 10 to 20 minutes for hosting multiple models which normally would take hours of coding</li>
+</ul>
+</div><div id="sagemaker-inbuilt-examples-for-hosting-models" class="slide section level2">
+<h1>SageMaker inbuilt Examples for hosting Models</h1>
+<p><img src="images/Sagemaker_Examples.PNG" title="Examples" /></p>
+</div><div id="example-sample" class="slide section level2">
+<h1>Example Sample</h1>
+<p><img src="images/Example.PNG" title="sample" /></p>
+</div><div id="code-sample" class="slide section level2">
+<h1>Code Sample</h1>
+<p><img src="images/phase1.PNG" title="Sample1" /></p>
+</div><div id="code-sample-1" class="slide section level2">
+<h1>Code Sample</h1>
+<p><img src="images/Phase4.PNG" title="Sample2" /></p>
+</div><div id="code-sample-2" class="slide section level2">
+<h1>Code Sample</h1>
+<p><img src="images/Phase7.PNG" title="Sample3" /></p>
+</div><div id="dashboard" class="slide section level2">
+<h1>Dashboard</h1>
+<p><img src="images/SM_Dashboard.jpg" title="Dashboard" /></p>
+</div><div id="conclusion" class="slide section level2">
+<h1>Conclusion</h1>
+<ul class="incremental">
+<li>Summary of how the mLogica and IIT teams working together</li>
+<li>Questions?</li>
+</ul>
+</div>
+</body>
+</html>

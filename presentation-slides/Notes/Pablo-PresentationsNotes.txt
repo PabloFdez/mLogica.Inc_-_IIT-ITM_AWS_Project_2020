@@ -1,0 +1,80 @@
+QuickSight: Pablo
+
+- Introduction to QuickSight and Data Visualization
+
+[Notes]:
+	· Data Visualization is not new. 
+	  Communicating data in a visual way has been done during hundreds of years.
+
+	· What is new is the increasing interest in the subject produced by the new technological developments 
+	  -> and the transparency and accessibility of data during the last decade.
+
+	· Some of the main benefits of Data Visualization could be:
+		+ Understanding Business Data
+		+ Helping the Target Audience to focus on the Business Insights
+		+ Improving Decision Making
+		+ Providing Summary and Data Patterns or Trends Reports
+
+	· Data pipelines, Distributed File Systems or Real-Time Analysis and Visualization are some of the most important
+	  -> and used technological advances in this field used by platforms like AWS, Azure, IBM Watson, Tableau, etc. 
+
+- What is AWS QuickSight?
+
+[Notes]:
+	· Cloud Base Platform Service
+	· Implements a Pay-Per-Use Model
+	· Enables the user to create Visualizations, perform Ad Hoc Analysis and get Business Insights form the data
+	· It's presented by AWS as Business Intelligence and Analytics Platform
+
+- Compare QS with Tableau and Power BI
+
+[Notes]:
+All 3 are very powerful Business Intelligence and Analysis tools with a few differences
+
+	· About the pricing
+		If the company has a heavy AWS footprint QuickSight is highly recommend as the pricing 
+		-> would be lower than Tableau and a bit similar to Power BI 
+
+	· Learning Curve
+		AWS QuickSight has a highly intuitive interface and is very easy to set up.
+
+		In the case of Power BI, if the user has experience using data sources on Excel the 
+		-> learning phase would be smoother. But in the case of Tableau, the learning curve would be a bit steeper.
+
+	· Data Sources
+		In this case Power BI is the most limited platform according to Data Sources compatibility.
+
+		Also, when using Tableau and Power BI all the sources should be integrated or connected manually while using AWS QuickSight
+		-> the Data Sources are automatically discovered implementing mutiple service compatibility and external sources adding.
+
+How QuickSight Works: Pablo
+
+- Architecture of QuickSight
+
+	[Notes]:
+
+	A great advantage is that QuickSight can automatically detect AWS data sources and can also work with other data sources.
+
+	AWS QuickSight supports a great variety of Data Sources like:
+		+ File Data Sources (CSV/TSV, JSON or Excel Files)
+		+ Software as a Services Data Sources (GitHub, Salesforce or Twitter)
+		+ Relational Data Sources (Like multiple Amazon Services [Athena, Aurora,Redsihft, S3], Apache Spark, MariaDB, SQL Server, Presto, SnowFlake, etc.)
+
+	AWS QuickSight enables organizations to scale to hundreds of thousands of users and delivers responsive performance by using a robust in-memory engine which is called SPICE.
+
+	So, going deeper, SPICE (which stands of Super-fast, Parallel, In-memory, Calculation, Engine) is a platform to provide visualizations, dashboards, and machine learning in a performant manner.
+
+-----------------------------------------------------
+References:
+
+(https://books.google.com/books?hl=es&lr=&id=I4qBVLfD3t4C&oi=fnd&pg=PT6&dq=importance+of+data+visualization&ots=b6-OpKiF4p&sig=aeHKdI8lIBNH11Ja_L52xb2oGbA#v=onepage&q=importance%20of%20data%20visualization&f=false)
+(https://www.boldbi.com/blog/data-visualization-importance-and-benefits)
+(https://www.import.io/post/what-is-data-visualization/)
+(https://www.educba.com/power-bi-vs-tableau/)
+(https://docs.aws.amazon.com/quicksight/latest/user/welcome.html)
+(https://key2consulting.com/power-bi-vs-tableau-vs-amazon-quicksight-which-is-best-for-your-organization/)
+(https://stackshare.io/stackups/amazon-quicksight-vs-tableau)
+(https://docs.aws.amazon.com/quicksight/latest/user/supported-data-sources.html)
+(https://aws.amazon.com/es/blogs/architecture/store-protect-optimize-your-healthcare-data-with-aws-part-2/)
+
+
